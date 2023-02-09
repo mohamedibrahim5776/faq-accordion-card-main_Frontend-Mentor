@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/index.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="images">
+      <img src="images/illustration-woman-online-mobile.svg" alt="">
+      <img src="images/bg-pattern-mobile.svg" alt="">
+    </div>
+    <div class="secsions">
+      <h1>FAQ</h1>
+      <section id="box1"  class="box">
+        <div class="question">
+          <div class="head">How many team members can I invite?</div>
+          <div onclick="add()" class="icon">^</div>
+          <div class="icon1 hide" onclick="remove()" >^</div>
+        </div>
+        <p class="hide head">You can invite up to 2 additional users on        the Free plan. There is no limit on 
+          team members for the Premium plan.</p>
+      </section>
+      <section class="box">
+        <div class="question">
+          <div class=" head" >What is the maximum file upload size?</div>
+          <div class="icon" onclick="add1()">^</div>
+          <div class="icon1 hide"onclick="remove1()">^</div>
+        </div>
+        <p class="hide  head" >No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </section>
+      <section class="box">
+        <div class="question">
+          <div class="head ">How do I reset my password?</div>
+          <div class="icon" onclick="add2()">^</div>
+          <div class="icon1 hide"onclick="remove2()">^</div>
+        </div>
+        <p class="hide head" >Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+      </section>
+      <section class="box">
+        <div class="question">
+          <div class="head ">Can I cancel my subscription?</div>
+          <div class="icon"onclick="add3()">^</div>
+          <div class="icon1 hide"onclick="remove3()">^</div>
+        </div>
+        <p class="hide ">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </section>
+      <section class="box" >
+        <div class="question">
+          <div class="head">Do you provide additional support? </div>
+            <div class="icon" onclick="add4()">^</div>
+            <div class="icon1 hide"onclick="remove4()">^</div>
+        </div>
+        <p class="hide head">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </section>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">mohamed ibrahim</a>.
+    <script src="src/index.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 86%;
+    margin-left: 23.5px;
+    margin-top: -130px;
+}
+.hide {
+    display: none;
+}
+.active {
+    display: block;
+}
+body {
+    background-color: hsl(273, 75%, 66%);
+}
+.container {
+    width: 375px;
+    margin: 50px auto 20px;
+    background-color: white;
+    padding: 0 20px 40px;
+    border-radius: 30px;
+}
+
+img:last-child {
+    margin-top: -90px;
+}
+.container h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+.question div:first-child {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container p {
+    color: hsl(237, 12%, 33%);
+    margin-bottom: 20px;
+}
+.headActive {
+    font-weight: bold;
+    color: black;
+}
+.container section  {
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+    color: hsl(237, 12%, 33%);
+}
+.container .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s ease all;
+}
+.question div:nth-child(2) {
+    font-size: 20px;
+    color: hsl(14, 88%, 65%);
+    transform: rotate(180deg);
+    margin-top:-10px ;
+    font-weight: bold;
+    cursor: pointer;
+}
+.question div:nth-child(3) {
+    font-size: 20px;
+    color: hsl(14, 88%, 65%);
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (min-width:567px) {
+    .container {
+        display: grid;
+        height: 715px;
+        width:auto;
+        min-width: 750px;
+        margin: 50px 80px 20px;
+        grid-template-columns: repeat(2,1fr);
+        align-items: start;
+        overflow: hidden;
+    }
+    .container h1 {
+        text-align: left;
+        margin-top: 60px;
+        font-size: 40px;
+    }
+    .images {
+        margin-top: 180px;
+    }
+    img {
+        transform: translateX(-55px);
+        margin: 0;
+    }
+    img:nth-child(2) {
+        margin-top:-180px
+    }
+}
